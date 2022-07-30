@@ -1,0 +1,86 @@
+
+    .nav{
+      display:flex;
+      align-items: center; 
+
+      @media screen and (max-width: 480px){
+        display: none;
+      } 
+    }
+    
+   .nav-button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+   }
+    
+
+  
+  .nav-item {
+    display: flex;
+  }
+
+  .nav-item__list {
+    color: var(--brand-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color var(--animacia);
+
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &.current {
+      color: var(--accent-color);
+    }
+  }
+
+
+  .nav-footer__contact-map{
+    color: var(--wite-color);
+  }
+  .nav-footer__contact-mail {
+    color: var(--white-transparent);
+    text-decoration: none;
+  }
+
+  .nav-footer__contact-mail--bottom{
+    margin-bottom: 9px;
+  }
+
+  .nav-footer__contact-map--bottom{
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+
+  .nav-footer__contact-tell {
+    color: var(--white-transparent);
+    text-decoration: none;
+  }
+
+  .nav-footer{
+    background-color: var(--footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .nav-footer__contact-mail--bottom{
+    margin-bottom: 9px;
+  }
+
+  .nav-footer__box{
+    display: flex;
+    align-items: baseline;
+    }
+
+    .nav-footer__logo{
+        width: 231px;
+        margin-right: 70px;
+       }
+

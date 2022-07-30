@@ -1,0 +1,16 @@
+.box-imag{
+    background-color: var(--wite-color);
+    padding-top: 0;
+  }
+  
+  .imag{
+    background-color: var(--wite-color);
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .imag__thumb{
+    position: relative;
+    content: "";
+  }

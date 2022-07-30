@@ -1,0 +1,94 @@
+.link:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .team-link{
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+
+  }
+  .team-link__links{
+    display: flex;
+    fill: var(--link-color);
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: fill var(--animacia);
+    transition: background-color var(--animacia);
+
+    &:last-of-type{
+      margin-right: 10px;
+      }
+
+
+  &:hover, 
+  &:focus {
+  fill: var(--wite-color);
+  background-color: var(--accent-color);
+  }
+
+
+}
+
+
+.client-list__link{
+    display: flex;
+      fill: var(--link-color);
+      text-decoration: none;
+      width: 170px;
+      height: 92px;
+      align-items: center;
+      justify-content: center;
+      transition: color var(--animacia);
+      border: 1px solid var(--link-color);
+      border-radius: 4px;
+
+
+      &:hover,
+      &:focus{
+        fill:var(--accent-color);
+      border-color: var(--accent-color);
+      }
+    }
+
+
+
+.footer-svg__link{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .footer-svg__links{
+    display: flex;
+    fill: var(--wite-color);
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--footer-link); 
+    align-items: center;
+    justify-content: center;
+    transition: fill var(--animacia), 
+    background-color var(--animacia);
+
+
+    &:hover, 
+    &:focus {
+  fill: var(--wite-color);
+  background-color: var(--accent-color);
+}
+}
+
+.footer-svg__link--right:not(:last-child){
+  margin-right: 10px;
+}
+
+
+.checkbox__link{
+    color: var(--accent-color);
+    }
+    

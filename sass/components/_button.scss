@@ -1,0 +1,117 @@
+
+.hero__button {
+    background: var(--accent-color);
+    color: var(--wite-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border: 0 transparent;
+      border-radius: 4px;
+      padding: 10px 32px;
+      margin-top: 30px;
+  }
+  
+  .button-box__navigate {
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--brand-color);
+    cursor: pointer;
+    border: none;
+    width: 128px;
+    height: 38px;
+    transition: color var(--animacia), background-color var(--animacia), 
+    box-shadow var(--animacia),border-radius var(--animacia) ;
+
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--wite-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+    }
+  }
+ 
+
+    
+  .button-list{
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    }
+  
+    .button-box{
+      display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    }
+    
+  
+  .button-box__btn:not(:last-child){
+    margin-right: 8px;
+  }
+  
+  .footer-blok__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+  margin-left: 12px;
+  background: var(--accent-color);
+  color: var(--wite-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border: 0 transparent;
+  border-radius: 4px;
+  padding:10px 28px 10px 29px;
+  position: relative;
+  }
+
+  
+  .modal__x-button{
+    position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  background: var(--wite-color);
+  border: 1px solid var(--border-modal-close);
+  cursor: pointer;
+  }
+
+  .modal-button{
+    background: var(--accent-color);
+      color: var(--wite-color);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(30/16);
+      letter-spacing: 0.06em;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border: 0 transparent;
+      border-radius: 4px;
+      padding: 10px 32px;
+      margin-left:  auto;
+      margin-right: auto;
+     display: flex;
+     justify-content: center;
+  }
+  
+  .modal-button--posing{
+    margin-top: 30px;
+  }
+  

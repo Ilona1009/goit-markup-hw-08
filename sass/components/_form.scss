@@ -1,0 +1,96 @@
+.form-modal{
+    margin-left: auto;
+    margin-right: auto;
+    
+    }
+    
+    .form-field{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 12px;
+    line-height:calc(14/12);
+    letter-spacing: 0.01em;
+    color: var(--contact-color);
+    }
+
+    
+    .form-modal__field--top{
+      margin-top: 12px;
+    }
+    
+    
+    .form-modal__inner{
+      position: relative;
+      width: 100%;
+    }
+    
+    .form-modal__top{
+      margin-top: 4px;
+    }
+    
+    .form-modal__input{
+      width: 100%;
+      margin: 0;
+      padding: 12px 11px;
+      padding-left: 42px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+
+
+    &:focus ~.form-modal__icon,
+    &:hover ~.form-modal__icon{
+      fill: var(--accent-color);
+    }
+
+    &:hover,
+    &:focus{
+      border-color: var(--accent-color);
+    }
+    }
+    
+    .form-modal__input--bottom{
+    margin-bottom: 10px;
+    }
+    
+    .form-modal__icon{
+    position: absolute;
+    top: 0;
+    left: 12px;
+    transform: translateY(50%);
+    transition: fill var(--animacia), border-color var(--animacia);
+    }
+    
+    
+    .textarea__form{
+      resize: none;
+      padding-top: 10px;
+      padding-left: 10px;
+      width: 448px;
+      height: 120px;
+    }
+
+    .form-textarea__comment:hover,
+    .form-textarea__comment:focus{
+      border-color: var(--accent-color);
+      
+    }
+    
+    
+    .textarea__border{
+      border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: var(--comment);
+    cursor: pointer;
+    transition: border-color var(--animacia);
+    outline: none;
+    }
+    
+    
+    .textarea--bottom{
+    padding-bottom: 4px;
+    
+    }
