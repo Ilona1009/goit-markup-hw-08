@@ -1,32 +1,48 @@
 
     .nav{
-      display:flex;
-      align-items: center; 
 
-      @media screen and (max-width: 480px){
-        display: none;
-      } 
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        
+        }
     }
     
    .nav-button{
     display: inline-flex;
-    margin: 0;
+    // margin-left: auto;
     padding: 0;
     border: 0;
     background-color: transparent;
+
+    & .nav-button_icon-close{ 
+      display: none;
+    }
+
+    & .nav-button_icon-menu{ 
+   
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+   }
    }
     
 
   
   .nav-item {
-    display: flex;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      outline: 1px solid salmon;
+   }
   }
 
   .nav-item__list {
     color: var(--brand-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1;
+    line-height: calc(16/14);
     letter-spacing: 0.02em;
     text-decoration: none;
     transition: color var(--animacia);

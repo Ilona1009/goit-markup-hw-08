@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Studio</title>
-  </head>
 
-  <body>
-    <!-- page header -->
-    <header class="heder">
-      <div class="container header__box">
-          <a href="index.html" class="logo"
-            ><span class="logo__web">Web</span><span class="logo__studio logo__studio--right">Studio</span></a
-          >
-          <nav class="nav">
-            <ul class="list nav-item">
-              <li class="link">
-                <a href="./index.html" class="nav-item__list current hover-studio">Студия</a>
-              </li>
-              <li class="link"><a href="./portfolio.html" class="nav-item__list">Портфолио</a></li>
-              <li class="link"><a href="контакты" class="nav-item__list">Контакты</a></li>
-            </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <title>Studio</title>
+</head>
+
+<body>
+  <header class="heder">
+    <div class="container">
+      <div class="header__box">
+        
+          <a class="logo" href="index.html"><span class="logo__web">Web</span><span
+            class="logo__studio logo__studio--right">Studio</span></a>
+        
+            <div class="header__nav"> 
+            <nav class="nav">
+          <ul class="list nav-item">
+            <li class="item-link">
+              <a href="./index.html" class="nav-item__list current hover-studio">Студия</a>
+            </li>
+            <li class="item-link"><a href="./portfolio.html" class="nav-item__list">Портфолио</a></li>
+            <li class=""><a href="контакты" class="nav-item__list">Контакты</a></li>
+          </ul>
+        </nav>
+
           <ul class="list item-contact">
-            <li class="link">
+            <li class="item-contact__mail">
               <a href="mailto:@devstudio.com" class="item-contact__commun">
                 <svg class="item-contact__svg-mail" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
-                @devstudio.com</a
-              >
+                @devstudio.com</a>
             </li>
-            <li class="link">
+            <li class="">
               <a href="tel:+380961111111" class="item-contact__commun">
                 <svg class="item-contact__svg-tell" width="12" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
-                +38 096 111 11 11</a
-              >
+                +38 096 111 11 11</a>
             </li>
           </ul>
-          <button type="button" class="nav-button">
-            <svg width="24" height="16" aria-label="переключатель мобильного меню">
-              <use class="nav-button_icon-menu" href="./images/icons.svg#icon-menu" ></use>
-              <use class="nav-button_icon-close" href="./images/icons.svg#icon-close-black" ></use>
-            </svg>
-          </button>
-          </nav>
-          
+        </div>
+        
+        <button type="button" class="nav-button is-hidden">
+          <svg width="24" height="16" aria-label="переключатель мобильного меню">
+            <use class="nav-button_icon-menu" href="./images/icons.svg#icon-menu"></use>
+            <use class="nav-button_icon-close" href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
       </div>
-    </header>
+    </div>
 
-    page presentation
 
-    <main>
-      <!-- hero -->
+
+
+    </div>
+  </header>
+
+  <!-- <main>
       <section class="hero hero__overlay">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
       </section>
 
-      <!-- osobennosti -->
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">наши плюсы</h2>
@@ -128,7 +132,6 @@
         </div>
       </section>
 
-      <!-- team -->
       <section class="section team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
@@ -337,7 +340,7 @@
         </div>
       </section>
     </main>
-    <!-- footer -->
+
     <footer class="nav-footer">
       <div class="container nav-footer__box">
         <div class="nav-footer__logo">
@@ -479,8 +482,9 @@
           <button type="submit" class="modal-button modal-button--posing">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
-  </body>
+  <script src="./js/modal.js"></script>
+</body>
+
 </html>
