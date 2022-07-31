@@ -21,7 +21,7 @@
           <a class="logo" href="index.html"><span class="logo__web">Web</span><span
             class="logo__studio logo__studio--right">Studio</span></a>
         
-            <div class="header__nav"> 
+            <div class="header__nav " id="header__nav" > 
             <nav class="nav">
           <ul class="list nav-item">
             <li class="item-link">
@@ -41,19 +41,37 @@
                 @devstudio.com</a>
             </li>
             <li class="">
-              <a href="tel:+380961111111" class="item-contact__commun">
+              <a href="tel:+380961111111" class="item-contact__commun item-contact__commun--bottom">
                 <svg class="item-contact__svg-tell" width="12" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a>
             </li>
           </ul>
+          <ul class="item__social-list">
+            <li class="list">
+              <a class="item__social" href="">Instagram</a>
+            </li>
+            <li class="list">
+              <a class="item__social href="">Twitter</a>
+            </li>
+            <li class="list">
+              <a class="item__social href="">Facebook</a>
+            </li>
+            <li class="list">
+              <a class="item__social href="">LinkedIn</a>
+            </li>
+          </ul>
+          
         </div>
         
-        <button type="button" class="nav-button is-hidden">
-          <svg width="24" height="16" aria-label="переключатель мобильного меню">
+        <button type="button" class="nav-button"
+        aria-expanded="false"
+        aria-controls="header__nav"
+        data-menu-button >
+          <svg width="40" height="40" aria-label="переключатель мобильного меню">
             <use class="nav-button_icon-menu" href="./images/icons.svg#icon-menu"></use>
-            <use class="nav-button_icon-close" href="./images/icons.svg#icon-close-black"></use>
+            <use class="nav-button_icon-close" href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
       </div>
