@@ -10,22 +10,27 @@
       @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
-        
         }
     }
     
-   .nav-button{
+    .nav-button{
     position: relative;
     display: inline-flex;
     padding: 0;
     border: 0;
     background-color: transparent;
-    transition: transform var(--animacia) ease-in-out;
+    transition: fill var(--animacia);
+
+    & :hover,
+    & :focus {
+      fill: var(--accent-color);
+    }
 
     @media screen and (min-width: 768px) {
       display: none;
-   }
+    }
   }
+  
 
   .nav-button__icon-close{
     position: fixed;
@@ -33,15 +38,21 @@
     z-index: 999;
     right: 15px;
     top: 10px;
+    transition: fill var(--animacia);
+
+    & :hover,
+    & :focus {
+      fill:var(--accent-color);
+    }
+
   
     @media screen and (min-width: 768px) {
       display: none;
-   }
+  }
   }
   
   
   .nav-item {
-
     @media screen and (max-width: 767px) {
     margin-bottom: 30px;
 }
@@ -67,6 +78,15 @@
       line-height: calc(47/40);
       margin-bottom: 32px;
       margin-right: 0;
+      transition: color var(--animacia);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &.current {
+      color: var(--accent-color);
+    }
     } 
 
 
