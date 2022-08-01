@@ -53,7 +53,7 @@
     .header__nav{
       
       @media screen and (max-width: 767px) {
-        // display: none;
+  
 
         position: fixed;
         top: 0;
@@ -62,13 +62,13 @@
 
         padding: 48px 40px;
         background-color: #fff;
+
+        transform: translateX(100%);
   
-        overflow-y: scroll;
+        // overflow-y: scroll;
   
         &.is-open {
-           display: flex;
-           flex-direction: column;
-           justify-content: space-between;
+          transform: translateX(0);
         }
 
       }

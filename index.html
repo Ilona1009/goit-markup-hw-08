@@ -21,16 +21,33 @@
           <a class="logo" href="index.html"><span class="logo__web">Web</span><span
             class="logo__studio logo__studio--right">Studio</span></a>
         
-            <div class="header__nav " id="header__nav" > 
+              <button type="button" 
+              class="nav-button js-open-menu"
+              aria-expanded="false"
+              aria-controls="header__nav">
+                <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                  <use class="nav-button_icon-menu" href="./images/icons.svg#icon-menu"></use>
+                </svg>
+              </button>
+
+          <div class="header__nav js-menu-container" id="header__nav"> 
             <nav class="nav">
-          <ul class="list nav-item">
-            <li class="item-link">
-              <a href="./index.html" class="nav-item__list current hover-studio">Студия</a>
-            </li>
-            <li class="item-link"><a href="./portfolio.html" class="nav-item__list">Портфолио</a></li>
-            <li class=""><a href="контакты" class="nav-item__list">Контакты</a></li>
-          </ul>
-        </nav>
+              <button type="button" 
+                class="nav-button nav-button__icon-close js-close-menu"
+                  aria-expanded="false" 
+                  aria-controls="header__nav">
+                <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                  <use class="nav-button__icon-close" href="./images/icons.svg#icon-close"></use>
+                </svg>
+          </button>
+              <ul class="list nav-item">
+                <li class="item-link">
+                  <a href="./index.html" class="nav-item__list current hover-studio">Студия</a>
+                </li>
+                <li class="item-link"><a href="./portfolio.html" class="nav-item__list">Портфолио</a></li>
+                <li class=""><a href="контакты" class="nav-item__list">Контакты</a></li>
+              </ul>
+            </nav>
 
           <ul class="list item-contact">
             <li class="item-contact__mail">
@@ -49,33 +66,24 @@
             </li>
           </ul>
           <ul class="item__social-list">
-            <li class="list">
+            <li class="list item__list">
               <a class="item__social" href="">Instagram</a>
             </li>
-            <li class="list">
+            <li class="list item__list">
               <a class="item__social href="">Twitter</a>
             </li>
-            <li class="list">
+            <li class="list item__list">
               <a class="item__social href="">Facebook</a>
             </li>
-            <li class="list">
+            <li class="list item__list">
               <a class="item__social href="">LinkedIn</a>
             </li>
           </ul>
-          
-        </div>
-        
-        <button type="button" class="nav-button"
-        aria-expanded="false"
-        aria-controls="header__nav"
-        data-menu-button >
-          <svg width="40" height="40" aria-label="переключатель мобильного меню">
-            <use class="nav-button_icon-menu" href="./images/icons.svg#icon-menu"></use>
-            <use class="nav-button_icon-close" href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
       </div>
     </div>
+  </div>
+</div>
+</div>
 
 
 
@@ -503,6 +511,7 @@
     </div> -->
 
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
