@@ -10,12 +10,25 @@
       align-items: center;
       margin-left: auto;
       margin-right: auto;
-      font-size: 14px;
-      line-height: calc(24/14);
       letter-spacing: 0.03em;
       color: var(--contact-color);
       user-select: none;
       cursor: pointer;
+
+      @media screen and ( max-width: 767px){
+        font-size: 12px;
+        line-height: calc(14/12);
+        }
+
+      @media screen and ( min-width: 768px) and (max-width: 1199px){ 
+        font-size: 12px;
+        line-height: calc(14/12);
+        }
+
+        @media screen and ( min-width: 1200px){ 
+          font-size: 14px;
+          line-height: calc(24/14);
+          }
     }
     
     .checkbox__input{
@@ -61,6 +74,21 @@
       font-size: 14px;
       line-height: calc(24/14);
       letter-spacing: 0.03em;
+
+      @media screen and ( max-width: 767px){
+        font-size: 12px;
+        line-height: calc(14/12);
+        }
+
+      @media screen and ( min-width: 768px) and (max-width: 1199px){ 
+        font-size: 12px;
+        line-height: calc(14/12);
+        }
+
+        @media screen and ( min-width: 1200px){ 
+          font-size: 14px;
+          line-height: calc(24/14);
+          }
     
     }
     
