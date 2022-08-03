@@ -1,12 +1,29 @@
 .client-list{
+    // margin: 0;
+    // padding: 0;
+
+  
+  @media screen and ( min-width: 768px) and (max-width: 1199px){ 
+    
+  }
+
+  @media screen and ( min-width: 1200px){ 
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    }
+  }
+  
+  .client-list__li{
+    @media screen and ( max-width: 767px){
+      width: calc((100%-60px)/2);
+      margin: 15px;
+    }
   }
   
   
   .client-list__li:not(:last-child){
-    margin-right: 30px;
+    @media screen and ( min-width: 1200px){ 
+      margin-right: 30px;
+      }
   }
   
