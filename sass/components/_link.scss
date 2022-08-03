@@ -36,10 +36,10 @@
 
 
 .client-list__link{
-    // display: flex;
+    display: flex;
       fill: var(--link-color);
       text-decoration: none;
-      // width: 170px;
+      width: 170px;
       height: 92px;
       align-items: center;
       justify-content: center;
@@ -53,6 +53,14 @@
         fill:var(--accent-color);
       border-color: var(--accent-color);
       }
+
+      @media screen and ( max-width: 767px){
+        width: 100%;
+      }
+
+      @media screen and ( min-width: 768px) and (max-width: 1199px){ 
+        width: 100%;
+        }
 
     }
 
