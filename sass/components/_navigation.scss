@@ -125,6 +125,10 @@
       display: flex;
       }
 
+      @media screen and (min-width: 1200px) {
+        text-align: left;
+        }
+
 
   }
 
@@ -148,6 +152,7 @@
 
     .nav-footer__logo{
         width: 231px;
+
         @media screen and (max-width: 767px) {
           margin-left: auto;
           margin-right: auto;
@@ -159,10 +164,16 @@
         }
 
 .nav-footer__tablet{
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px){
   display: flex;
   justify-content: space-around;
   margin-bottom: 60px;
   }
+
+  @media screen and (min-width: 1200px){
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    }
 }
 

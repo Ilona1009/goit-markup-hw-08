@@ -31,18 +31,19 @@
   }
 
   .cards-box{
-    @media screen and ( min-width: 480px) { 
-      margin: 15px;
-      flex-basis: calc(100vw - 30px);
+    @media screen and ( max-width: 767px) { 
+      margin-top: 15px;
+      
       }
 
       @media screen and (min-width: 768px){ 
-      flex-basis: calc(100% / 2 - 30px);
+      flex-basis: calc(100% / 2 - 15px);
     }
 
     @media screen and (min-width: 1200px){ 
     flex-basis: calc(100% / 3 - 30px);
     margin: 0;
+    flex-grow: 1;
     }
   }
 
@@ -83,24 +84,21 @@
 
 
 .cards-work{ 
-
-@media screen and ( min-width: 480px) { 
   display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
+  flex-wrap: wrap;
+
+@media screen and ( max-width: 767px) { 
+    justify-content: center;
     margin-top: 30px;
 }
 
-@media screen and ( max-width: 767px){
-  display: flex;
+@media screen and ( min-width: 768px){
+  justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
 }
 
 
 @media screen and ( min-width: 1200px){ 
-  display: flex;
-  flex-wrap:wrap ;
   gap: var(--card-set-gap) ;
   }
 }

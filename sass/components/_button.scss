@@ -27,7 +27,7 @@
     color: var(--brand-color);
     cursor: pointer;
     border: none;
-    width: 128px;
+    padding: 0 22px;
     height: 38px;
     transition: color var(--animacia), background-color var(--animacia), 
     box-shadow var(--animacia),border-radius var(--animacia) ;
@@ -44,6 +44,7 @@
     @media screen and ( max-width: 767px){
 margin-left: 0;
 margin-bottom: 15px;
+
     }
       
   }
@@ -66,6 +67,7 @@ margin-bottom: 15px;
   
   @media screen and ( min-width: 768px) and (max-width: 1199px){ 
     margin-bottom: 30px;
+    justify-content: center;
   }
   
   @media screen and ( min-width: 1200px){ 
