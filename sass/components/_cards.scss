@@ -39,7 +39,12 @@
       @media screen and (min-width: 768px){ 
       flex-basis: calc(100% / 2 - 30px);
     }
+
+    @media screen and (min-width: 1200px){ 
+    flex-basis: calc(100% / 3 - 30px);
+    margin: 0;
     }
+  }
 
   .cards-work__thumb{
     position: relative;
@@ -69,22 +74,27 @@
     padding: 63px 24px;
   }
 
+  .cards-work__img{
+    height: 294px;
+    width: 100%;
+    object-fit: cover;
+  }
+
 
 
 .cards-work{ 
-@media screen and ( max-width: 767px){
-  display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-  
 
 @media screen and ( min-width: 480px) { 
   display: flex;
     flex-wrap: wrap;
     margin: -15px;
     margin-top: 30px;
+}
 
+@media screen and ( max-width: 767px){
+  display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 
