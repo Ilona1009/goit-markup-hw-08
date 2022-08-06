@@ -60,6 +60,11 @@ text-decoration: none;
     color: var(--accent-color);
   } 
  }
+
+ @media screen and (min-width: 1200px){
+  font-size: 14px;
+line-height: calc(16/14);
+ }
   }
 
   .item-contact__commun--mobi-tel{

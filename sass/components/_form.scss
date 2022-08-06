@@ -61,6 +61,13 @@
     transform: translateY(50%);
     transition: fill var(--animacia), border-color var(--animacia);
     }
+
+    .form-modal__label{
+      color: var(--contact-color);font-weight: 400;
+      font-size: 12px;
+      line-height:calc(12/14);
+      letter-spacing: 0.01em;
+    }
     
     
     .textarea__form{

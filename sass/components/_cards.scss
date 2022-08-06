@@ -31,11 +31,15 @@
   }
 
   .cards-box{
-    @media screen and ( min-width: 768px) and (max-width: 1199px){ 
+    @media screen and ( min-width: 480px) { 
       margin: 15px;
-      flex-basis: calc((100% - 60px)/2);
+      flex-basis: calc(100vw - 30px);
       }
-  }
+
+      @media screen and (min-width: 768px){ 
+      flex-basis: calc(100% / 2 - 30px);
+    }
+    }
 
   .cards-work__thumb{
     position: relative;
@@ -75,7 +79,7 @@
 }
   
 
-@media screen and ( min-width: 768px) and (max-width: 1199px){ 
+@media screen and ( min-width: 480px) { 
   display: flex;
     flex-wrap: wrap;
     margin: -15px;

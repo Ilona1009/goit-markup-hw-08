@@ -42,14 +42,10 @@
     }
 
     @media screen and ( max-width: 767px){
-      width: 100%;
-      margin-bottom: 15px;
+margin-left: 0;
+margin-bottom: 15px;
     }
       
-  
-  @media screen and ( min-width: 768px) and (max-width: 1199px){ 
-    width: 100%;
-  }
   }
  
 
@@ -58,24 +54,21 @@
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     }
   
     .button-box{
     @media screen and ( max-width: 767px){
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 15px;
+      margin-bottom: 40px;
     }
       
   
   @media screen and ( min-width: 768px) and (max-width: 1199px){ 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    margin-bottom: 30px;
   }
   
   @media screen and ( min-width: 1200px){ 
-    display: flex;
     justify-content: center;
     margin-bottom: 50px;
   }
