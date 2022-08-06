@@ -76,6 +76,7 @@
       margin-bottom: 32px;
       margin-right: 0;
       transition: color var(--animacia);
+    } 
 
     &:hover,
     &:focus {
@@ -84,7 +85,6 @@
     &.current {
       color: var(--accent-color);
     }
-    } 
   }
 
   .nav-footer__contact-map{
